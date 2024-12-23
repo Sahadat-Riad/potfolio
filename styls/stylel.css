@@ -1,6 +1,7 @@
 /* common shared styles */
 body {
-  font-family: "Open Sans", serif;
+  /* font-family: "Open Sans", serif; */
+  font-size: 20px;
 }
 .btn-primary {
   border-radius: 5px;
@@ -19,6 +20,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 200px;
 }
 
 .nav-title {
@@ -38,4 +40,17 @@ nav li {
 nav a {
   text-decoration: none;
   color: rgb(44, 43, 43);
+}
+/* Header related style */
+.header {
+  background-color: #fff8f3;
+}
+.banner {
+  padding: 30px 30px 30px 150px;
+  display: flex;
+  align-items: center;
+}
+.banner .profile-pic {
+  width: 340px;
+  height: 400px;
 }
