@@ -119,7 +119,7 @@ main section {
   padding: 30px;
   border-radius: 5px;
   background: rgb(255, 255, 255);
-  box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
+  box-shadow: 0px 6px 50px 5px rgba(255, 0, 238, 0.06);
 }
 .skills-container {
   display: flex;
@@ -129,6 +129,7 @@ main section {
   color: lightgray;
 }
 /* Resume Section styles */
+
 .resume-column-title {
   color: #474747;
   font-size: 30px;
@@ -163,7 +164,26 @@ main section {
 /* Footer styles */
 footer {
   display: flex;
+  gap: 80px;
   background: #fff8f3;
-  margin-top: 100px;
-  padding: 130px 200px;
+  margin-top: 90px;
+  padding: 130px 180px;
+}
+.footer-column {
+  width: 50%;
+}
+.social-links {
+  margin-right: 50px;
+}
+.contact input [type=""],
+.contact input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 24px;
+  padding: 18px 35px;
+  color: #757577;
+  border: 5px;
+  background: white;
+  border: 0;
+  width: 100%;
 }
