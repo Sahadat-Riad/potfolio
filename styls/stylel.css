@@ -1,7 +1,7 @@
 /* common shared styles */
 body {
-  /* font-family: "Open Sans", serif; */
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700px;
 }
 .section-title {
   color: #181818;
@@ -56,9 +56,9 @@ nav a {
 .header {
   background-color: #fff8f3;
   background-image: url("../images/header_bg.png");
-
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: 600px 400px; /* Width: 300px, Height: 200px */
 }
 .banner {
   padding: 30px 30px 0px 150px;
@@ -70,8 +70,8 @@ nav a {
   max-width: 500px;
 }
 .banner .profile-pic {
-  width: 380px;
-  height: 380px;
+  width: 480px;
+  height: 485px;
 }
 .banner-wc {
   font-size: 45px;
@@ -114,6 +114,7 @@ main section {
 /* What i do related styles */
 #what-i-do-description {
   padding: 30px 150px;
+  text-align: center;
 }
 .skill {
   padding: 30px;
@@ -137,6 +138,7 @@ main section {
 }
 .resume-container {
   display: flex;
+  justify-content: center;
   gap: 60px;
 }
 .resume-item-institute,
@@ -162,9 +164,9 @@ main section {
   margin-top: 50px;
 }
 /* Footer styles */
-footer {
+.footer {
   display: flex;
-  gap: 80px;
+  gap: 60px;
   background: #fff8f3;
   margin-top: 90px;
   padding: 130px 180px;
@@ -185,5 +187,56 @@ textarea {
   border: 5px;
   background: white;
   border: 0;
-  width: 100%;
+  width: 80%;
+}
+
+.hide {
+  display: none;
+}
+/* Responsive for small device */
+@media screen and (max-width: 576px) {
+  .header {
+  }
+  .skills-container,
+  .resume-container,
+  .banner,
+  nav {
+    text-align: center;
+    flex-direction: column;
+  }
+  .banner {
+    padding: 30px 30px 0px 30px;
+  }
+  .banner .profile-pic {
+    width: 110%;
+  }
+  .banner-description {
+    width: 360px;
+  }
+  #what-i-do-description {
+    padding: 10px;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-info-container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .section-description {
+    text-align: center;
+  }
+  .btn-primary {
+    margin-bottom: 5px;
+  }
 }
